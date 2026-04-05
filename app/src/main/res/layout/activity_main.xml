@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FAFAFA"
     android:padding="32dp"
-    tools:context=".MainActivity">
+    tools:context=".pertemuan2.MainActivity">
 
     <TextView
         android:id="@+id/tvJudul"

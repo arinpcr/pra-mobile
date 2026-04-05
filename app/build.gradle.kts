@@ -4,11 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.arin_canvas"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+    compileSdk = 36
+
+    buildFeatures {
+        viewBinding = true
     }
+
 
     defaultConfig {
         applicationId = "com.example.arin_canvas"

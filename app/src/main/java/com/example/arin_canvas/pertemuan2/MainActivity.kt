@@ -1,12 +1,13 @@
-package com.example.arin_canvas
+package com.example.arin_canvas.pertemuan2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.arin_canvas.R
 import kotlin.math.PI
 import kotlin.math.pow
 
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 // Menampilkan pesan rahasia di Logcat (Sesuai syarat tugas)
                 Log.d("ArinCanvasLog", "Berhasil hitung lingkaran! Jari-jari: $r, Hasil: $luas")
             } else {
-                Toast.makeText(this, "Sayang, Jari-jarinya diisi dulu ya!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Jari-jarinya diisi dulu ya!", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 // Menampilkan pesan rahasia di Logcat (Sesuai syarat tugas)
                 Log.d("ArinCanvasLog", "Berhasil hitung tabung! r: $r, t: $t, Hasil: $volume")
             } else {
-                Toast.makeText(this, "Sayang, Jari-jari dan Tingginya harus diisi dua-duanya!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Jari-jari dan Tingginya harus diisi dua-duanya!", Toast.LENGTH_SHORT).show()
             }
         }
     }
