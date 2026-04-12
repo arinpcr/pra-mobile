@@ -12,10 +12,6 @@
         android:theme="@style/Theme.Arincanvas">
 
         <activity
-            android:name=".pertemuan2.MainActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".pertemuan3.LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -24,14 +20,16 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".pertemuan3.SuccessActivity"
-            android:exported="false" />
+        <activity android:name=".pertemuan3.SuccessActivity" android:exported="false" />
+        <activity android:name=".pertemuan4.DashboardActivity" android:exported="false" />
+        <activity android:name=".pertemuan4.ChatActivity" android:exported="false" />
+        <activity android:name=".pertemuan4.AdoptActivity" android:exported="false" />
+        <activity android:name=".pertemuan2.BangunRuangActivity" android:exported="false" />
+        <activity android:name=".pertemuan4.MapsActivity" android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>

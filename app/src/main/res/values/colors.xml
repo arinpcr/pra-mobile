@@ -2,12 +2,23 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary_red">#CC0000</color>
     <color name="bg_white">#FFFFFF</color>
-    <color name="text_dark">#1A1A1A</color>
-    <color name="text_grey">#757575</color>
-    <color name="input_bg">#F5F5F5</color>
-    <color name="input_border">#E0E0E0</color>
-    <color name="primary_red_border">#D32F2F</color>
-    <color name="checkbox_red">#D32F2F</color>
+
+    <color name="login_bg">#48784E</color>
+    <color name="success_bg">#C1D46B</color>
+    <color name="card_bg">#F7F7ED</color>
+    <color name="green_dark">#2E7D32</color>
+
+    <color name="bg_gradient_start">#F2F9F2</color>
+    <color name="gradient_green_start">#A0C060</color>
+    <color name="gradient_green_end">#3E6542</color>
+
+    <color name="adopt_blue">#3EC7F3</color>
+    <color name="adopt_purple">#B8A9F9</color>
+    <color name="adopt_red">#D63D3D</color>
+
+    <color name="caer_red">#D03A27</color>
+    <color name="caer_orange">#F4A221</color>
+    <color name="primary_red">#D32F2F</color>
+    <color name="primary_red_border">#B71C1C</color>
 </resources>

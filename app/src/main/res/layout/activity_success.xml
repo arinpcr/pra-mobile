@@ -3,67 +3,127 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="@color/success_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:rotation="-20"
+        android:src="@drawable/ic_paw"
+        app:tint="@color/card_bg" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="100dp"
+        android:rotation="15"
+        android:src="@drawable/ic_paw"
+        app:tint="@color/login_bg" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-30dp"
+        android:rotation="25"
+        android:src="@drawable/ic_paw"
+        app:tint="@color/caer_orange" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="60dp"
+        android:rotation="-10"
+        android:src="@drawable/ic_paw"
+        app:tint="@color/card_bg" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="140dp"
+        android:rotation="-45"
+        android:src="@drawable/ic_paw"
+        app:tint="@color/login_bg" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="160dp"
+        android:rotation="45"
+        android:src="@drawable/ic_paw"
+        app:tint="@color/card_bg" />
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/bg_rounded_top"
-        android:backgroundTint="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-40dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:orientation="vertical">
 
-        <View
-            android:layout_width="40dp"
-            android:layout_height="4dp"
-            android:background="#E0E0E0"
-            android:layout_marginBottom="60dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="S" android:textColor="@color/login_bg" android:textSize="50sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="U" android:textColor="@color/caer_red" android:textSize="50sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="C" android:textColor="@color/login_bg" android:textSize="50sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="C" android:textColor="@color/caer_orange" android:textSize="50sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="E" android:textColor="@color/login_bg" android:textSize="50sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="S" android:textColor="@color/caer_red" android:textSize="50sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:text="S" android:textColor="@color/login_bg" android:textSize="50sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="You have successfully logged in"
+            android:textColor="@color/login_bg"
+            android:textSize="12sp" />
 
         <ImageView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:src="@drawable/img_success_complete" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Yey! Login Successfull"
-            android:textColor="#1A1A1A"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/poppins_bold"
-            android:gravity="center"
-            android:text="You will be moved to home screen right now.\nEnjoy the features!"
-            android:textColor="#9E9E9E"
-            android:textSize="14sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/btnContinue"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="@color/primary_red"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Lets Explore"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="12dp" />
+            android:layout_width="260dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_cat_white_outline" />
 
     </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_btn_gradient"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Let's Explore"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
 </RelativeLayout>
