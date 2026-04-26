@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:rotation="-20"
+        android:src="@drawable/logo"
+        android:alpha="0.3"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="80dp"
+        android:rotation="15"
+        android:src="@drawable/logo"
+        android:alpha="0.3"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/bottom_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/bg_card_cream"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingTop="70dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input_white"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_profile"
+                app:tint="@color/login_bg" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:hint="Username"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input_white"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_lock_green"
+                app:tint="@color/login_bg" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_btn_gradient"
+            app:backgroundTint="@null"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_bold"
+            android:elevation="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Sistem Informasi Penduduk Desa"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/bina_desa_navy"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_divider"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Official PCR Project"
+                android:textAlignment="center"
+                android:textColor="@color/login_bg"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_divider"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_apple_round" android:layout_marginEnd="16dp" />
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_google_round" android:layout_marginEnd="16dp" />
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_twitter_round" android:layout_marginEnd="16dp" />
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_fb_round" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/bottom_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:src="@drawable/logo2"
+            android:scaleType="centerInside" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

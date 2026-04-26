@@ -107,8 +107,7 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/ic_search"
-                        app:tint="@color/login_bg"/>
+                        android:src="@drawable/outline_calculate_24"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -151,7 +150,7 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/ic_all"/>
+                        android:src="@drawable/outline_family_star_24"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -168,14 +167,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Custom 1: Cari Sahabat Bulu"
+                            android:text="Cari Sahabat Bulu"
                             android:textSize="12sp"
                             android:textColor="@color/login_bg"/>
                     </LinearLayout>
-
-                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
-                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_heart_green" android:layout_alignParentEnd="true" android:layout_centerVertical="true"/>
-                    </RelativeLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -183,7 +178,7 @@
                 android:id="@+id/card_pet_chat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="35dp"
+                android:layout_marginBottom="20dp"
                 app:cardCornerRadius="25dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardElevation="2dp">
@@ -198,8 +193,7 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/ic_chat"
-                        app:tint="@color/login_bg"/>
+                        android:src="@drawable/outline_chat_24"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -216,24 +210,62 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Custom 2: Ngobrol Seru"
+                            android:text="Ngobrol Seru"
                             android:textSize="12sp"
                             android:textColor="#6D6D6D"/>
                     </LinearLayout>
-
-                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
-
-                        <ImageView
-                            android:layout_width="47dp"
-                            android:layout_height="35dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/ic_star_green" />
-                    </RelativeLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#40FFFFFF" android:layout_marginVertical="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#40FFFFFF"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_search_green"
+                        app:tint="@color/pink"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Web Bina Desa"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/pink"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat Data Kependudukan"
+                            android:textSize="12sp"
+                            android:textColor="#F24174"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:id="@+id/btn_logout"
@@ -248,7 +280,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Keluar Aplikasi"
+                    android:text="Logout"
                     android:fontFamily="@font/poppins_bold"
                     android:textSize="16sp"
                     android:textColor="#D32F2F"/>

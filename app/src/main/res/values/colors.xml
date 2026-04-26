@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="bina_desa_pink">#F44275</color>
+    <color name="bina_desa_navy">#213758</color>
+    <color name="bina_desa_light">#FFF3F6</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bg_white">#FFFFFF</color>
 
-    <color name="login_bg">#48784E</color>
-    <color name="success_bg">#C1D46B</color>
-    <color name="card_bg">#F7F7ED</color>
-    <color name="green_dark">#2E7D32</color>
-
-    <color name="bg_gradient_start">#F2F9F2</color>
-    <color name="gradient_green_start">#A0C060</color>
-    <color name="gradient_green_end">#3E6542</color>
-
+    <color name="login_bg">#F44275</color> <color name="success_bg">#213758</color> <color name="card_bg">#FFF3F6</color> <color name="green_dark">#213758</color> <color name="bg_gradient_start">#FFF3F6</color>
+    <color name="gradient_green_start">#F44275</color>
+    <color name="gradient_green_end">#D81B60</color>
+    <color name="pink">#D81B60</color>
     <color name="adopt_blue">#3EC7F3</color>
     <color name="adopt_purple">#B8A9F9</color>
     <color name="adopt_red">#D63D3D</color>
-
     <color name="caer_red">#D03A27</color>
     <color name="caer_orange">#F4A221</color>
     <color name="primary_red">#D32F2F</color>

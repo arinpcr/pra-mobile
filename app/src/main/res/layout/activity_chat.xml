@@ -3,11 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/card_bg">
+    android:background="@color/card_bg"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_chat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/login_bg"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationIconTint="@color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_chat"
         android:layout_above="@+id/bottom_nav_chat"
         android:scrollbars="none">
 
@@ -22,16 +33,6 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="20dp"
                 android:paddingTop="30dp">
-
-                <ImageView
-                    android:id="@+id/btn_back_chat"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentStart="true"
-                    android:src="@drawable/ic_back"
-                    app:tint="@color/login_bg"
-                    android:clickable="true"
-                    android:focusable="true"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -124,12 +125,10 @@
                     </androidx.cardview.widget.CardView>
                     <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/bg_badge_green" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_marginBottom="5dp" android:layout_marginEnd="5dp"/>
                 </RelativeLayout>
-
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mr. Chen" android:fontFamily="@font/poppins_bold" android:textColor="@color/login_bg" android:textSize="15sp"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quisque blandit arcu quis turpis tincidunt..." android:textColor="@color/login_bg" android:textSize="11sp" android:maxLines="2" android:ellipsize="end"/>
                 </LinearLayout>
-
                 <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="end" android:layout_marginStart="10dp">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15 min" android:textColor="#F4A221" android:fontFamily="@font/poppins_bold" android:textSize="12sp"/>
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="5dp" android:gravity="center_vertical">
@@ -147,12 +146,10 @@
                     </androidx.cardview.widget.CardView>
                     <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/bg_badge_green" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_marginBottom="5dp" android:layout_marginEnd="5dp"/>
                 </RelativeLayout>
-
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Burgundy Flemming" android:fontFamily="@font/poppins_bold" android:textColor="@color/login_bg" android:textSize="15sp"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sed ligula erat, dignissim sit amet..." android:textColor="@color/login_bg" android:textSize="11sp" android:maxLines="2" android:ellipsize="end"/>
                 </LinearLayout>
-
                 <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="end" android:layout_marginStart="10dp">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32 min" android:textColor="#F4A221" android:fontFamily="@font/poppins_bold" android:textSize="12sp"/>
                     <TextView android:layout_width="22dp" android:layout_height="22dp" android:text="2" android:gravity="center" android:textColor="@color/white" android:textSize="12sp" android:background="@drawable/bg_btn_gradient" android:backgroundTint="#F4A221" android:layout_marginTop="5dp"/>
@@ -167,12 +164,10 @@
                     </androidx.cardview.widget.CardView>
                     <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/bg_badge_green" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_marginBottom="5dp" android:layout_marginEnd="5dp"/>
                 </RelativeLayout>
-
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hugh Saturation" android:fontFamily="@font/poppins_bold" android:textColor="@color/login_bg" android:textSize="15sp"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Duis eget nibh tincidunt odio..." android:textColor="@color/login_bg" android:textSize="11sp" android:maxLines="2" android:ellipsize="end"/>
                 </LinearLayout>
-
                 <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="end" android:layout_marginStart="10dp">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 hour" android:textColor="#F4A221" android:fontFamily="@font/poppins_bold" android:textSize="12sp"/>
                 </LinearLayout>
