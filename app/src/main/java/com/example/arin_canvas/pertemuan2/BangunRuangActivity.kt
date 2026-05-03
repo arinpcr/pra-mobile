@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.arin_canvas.BaseActivity
 import com.example.arin_canvas.R
 import com.example.arin_canvas.pertemuan4.DashboardActivity
 import kotlin.math.PI
@@ -63,7 +64,7 @@ class BangunRuangActivity : AppCompatActivity() {
 
         // LOGIKA TOMBOL KEMBALI KE DASHBOARD
         btnBack.setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
+            val intent = Intent(this, BaseActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
             finish()

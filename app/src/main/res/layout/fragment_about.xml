@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:paddingTop="10dp"> <!-- Tambahkan padding top di sini agar Toolbar sedikit turun -->
+
+    <!-- Toolbar dengan Tombol Back -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/login_bg"
+        app:title="About System"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationIconTint="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_about"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Bagian Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Profil &amp; Visi"
+                android:textColor="@color/pink"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Mengenal lebih dekat kreator dan visi di balik Sistem Informasi Kependudukan Desa Digital."
+                android:textAlignment="center"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <!-- Bagian Profil Kreator -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:gravity="center_vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_profile_dev" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Arini Zahira Putri"
+                            android:textColor="@color/login_bg"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NIM: 2457301017"
+                            android:textColor="@color/pink"
+                            android:textSize="14sp" />
+
+                        <!-- Link Sosmed -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_github"
+                                android:layout_marginEnd="10dp"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_linkedin"
+                                android:layout_marginEnd="10dp"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_instagram"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tentang Sistem -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Tentang Sistem"
+                android:textColor="@color/login_bg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="🎯 Tujuan Pengembangan"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/pink"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Aplikasi ini dirancang untuk mendigitalkan arsip kependudukan desa yang sebelumnya manual. Tujuannya adalah mempercepat proses pencarian data warga, mempermudah rekapitulasi laporan kelahiran/kematian, serta menyediakan data statistik yang akurat bagi perangkat desa untuk pengambilan keputusan."
+                android:textColor="#555555"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Sebagai mahasiswa Sistem Informasi, saya mengembangkan aplikasi ini dengan fokus pada kemudahan penggunaan (User Experience) dan keamanan data. Modul-modul yang tersedia saling terintegrasi untuk menciptakan ekosistem administrasi desa yang efisien."
+                android:textColor="#555555"
+                android:textSize="13sp" />
+
+            <!-- Teknologi Pendukung -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Teknologi Pendukung:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laravel 10 • PHP 8 • Bootstrap 5 • MySQL"
+                android:textColor="@color/pink"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginVertical="20dp"/>
+
+            <!-- Modul & Fungsionalitas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Modul &amp; Fungsionalitas"
+                android:textColor="@color/login_bg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fitur Utama Sistem: 4 modul inti kependudukan."
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <!-- Grid Modul -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="• Data Penduduk: Database warga &amp; pencarian cepat."
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="• Kelahiran: Integrasi Akta &amp; Kartu Keluarga."
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="• Kematian: Validasi status data pemilih."
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="• Laporan: Dashboard visual grafik real-time."
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Alur Kerja -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Alur Kerja Sistem"
+                android:textColor="@color/login_bg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FDF2F5"
+                android:padding="15dp"
+                android:text="1. Input Data: Admin memasukkan data peristiwa.\n2. Validasi: Sistem cek NIK di MySQL.\n3. Output: Grafik statistik &amp; laporan siap cetak."
+                android:textColor="@color/login_bg"
+                android:textSize="13sp"
+                android:lineSpacingExtra="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
