@@ -10,7 +10,6 @@ android {
         viewBinding = true
     }
 
-
     defaultConfig {
         applicationId = "com.example.arin_canvas"
         minSdk = 27
@@ -45,4 +44,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // INI DIA TAMBAHANNYA UNTUK MENGATASI ERROR GRIDLAYOUT
+    implementation("androidx.gridlayout:gridlayout:1.0.0")
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 }

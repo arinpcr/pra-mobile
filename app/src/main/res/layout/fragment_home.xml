@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@color/login_bg">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <!-- INI YANG SUDAH DIPERBAIKI (Tidak pakai MaterialToolbar lagi) -->
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -42,7 +43,6 @@
             android:rotation="45"
             android:alpha="0.7"/>
 
-        <!-- INI BAGIAN YANG DIPERBAIKI -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -271,6 +271,48 @@
                                 android:text="Lihat Data Kependudukan"
                                 android:textSize="12sp"
                                 android:textColor="#F24174"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Tombol Dashboard SIPADU -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_sipadu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="2dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/outline_family_star_24"
+                            app:tint="@color/login_bg"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dashboard SIPADU"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/login_bg"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Modul Pengelolaan Desa"
+                                android:textSize="12sp"
+                                android:textColor="#6D6D6D"/>
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

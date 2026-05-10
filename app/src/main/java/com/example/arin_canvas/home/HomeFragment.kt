@@ -10,7 +10,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.arin_canvas.AuthActivity
-import com.example.arin_canvas.WebViewActivity
+import com.example.arin_canvas.ModifiedActivity
+import com.example.arin_canvas.WebViewActivity // <-- Sudah dikembalikan ke WebViewActivity
 import com.example.arin_canvas.databinding.FragmentHomeBinding
 import com.example.arin_canvas.pertemuan2.BangunRuangActivity
 import com.example.arin_canvas.pertemuan4.AdoptActivity
@@ -51,13 +52,19 @@ class HomeFragment : Fragment() {
             pindahHalaman(ChatActivity::class.java, "Pet Chat", "Ngobrol bareng Komunitas")
         }
 
-        // 4. Tombol Web Bina Desa
+        // 4. Tombol Web Bina Desa (Aman, kembali ke WebView)
         binding.cardWebView.setOnClickListener {
             val intent = Intent(requireContext(), WebViewActivity::class.java)
             startActivity(intent)
         }
 
-        // 5. Tombol Logout
+        // 5. Tombol Dashboard SIPADU (Penyelamat Tugas Pertemuan 9)
+        binding.cardSipadu.setOnClickListener {
+            val intent = Intent(requireContext(), ModifiedActivity::class.java)
+            startActivity(intent)
+        }
+
+        // 6. Tombol Logout
         binding.btnLogout.setOnClickListener {
             val builder = AlertDialog.Builder(requireContext())
             builder.setTitle("Konfirmasi Logout")

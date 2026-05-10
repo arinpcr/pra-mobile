@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.arin_canvas.databinding.ActivityBaseBinding
 import com.example.arin_canvas.home.HomeFragment
+import com.example.arin_canvas.message.MessageFragment
+import com.example.arin_canvas.more.MoreFragment // <-- IMPORT FRAGMENT BARU
 import com.example.arin_canvas.about.AboutFragment
 import com.example.arin_canvas.profile.ProfileFragment
 
@@ -24,6 +26,14 @@ class BaseActivity : AppCompatActivity() {
                     replaceFragment(HomeFragment())
                     true
                 }
+                R.id.nav_message -> {
+                    replaceFragment(MessageFragment())
+                    true
+                }
+                R.id.nav_more -> { // <-- LOGIKA UNTUK MENU LAINNYA
+                    replaceFragment(MoreFragment())
+                    true
+                }
                 R.id.nav_about -> {
                     replaceFragment(AboutFragment())
                     true
@@ -40,7 +50,6 @@ class BaseActivity : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
-            // .addToBackStack(null) DIMATIKAN: Solusi agar tidak ada halaman putih saat Back
             .commit()
     }
 }
