@@ -13,16 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Arincanvas">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".message.MessageAdapter"
             android:exported="false" />
         <activity
             android:name=".ModifiedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".pertemuan9.NinthActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FormPendudukActivity"
             android:exported="false" />
         <activity
             android:name=".BaseActivity"

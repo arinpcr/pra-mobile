@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="-5dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="You have successfully logged in"
+            android:text="Registrasi Akun Berhasil!"
             android:textColor="@color/login_bg"
             android:textSize="12sp" />
 
@@ -121,7 +121,7 @@
         android:background="@drawable/bg_btn_gradient"
         android:elevation="4dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Let's Explore"
+        android:text="Login Sekarang"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp" />

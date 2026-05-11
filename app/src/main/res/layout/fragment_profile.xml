@@ -139,7 +139,7 @@
 
                         <!-- Jabatan -->
                         <TextView android:text="ROLE / JABATAN" android:textSize="10sp" android:textColor="#888888" android:fontFamily="@font/poppins_bold"/>
-                        <TextView android:text="Social Coordinator HIMA" android:textSize="16sp" android:textColor="@color/login_bg" android:layout_marginBottom="15dp"/>
+                        <TextView android:text="Super Admin" android:textSize="16sp" android:textColor="@color/login_bg" android:layout_marginBottom="15dp"/>
 
                         <!-- Email -->
                         <TextView android:text="ALAMAT EMAIL" android:textSize="10sp" android:textColor="#888888" android:fontFamily="@font/poppins_bold"/>

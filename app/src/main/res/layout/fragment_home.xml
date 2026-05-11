@@ -86,7 +86,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pilih tujuan petualanganmu hari ini!"
+                            android:text="Pilih tujuanmu hari ini!"
                             android:textSize="13sp"
                             android:textColor="#E0E0E0" />
                     </LinearLayout>
@@ -134,7 +134,7 @@
                                 android:text="Bangun Ruang"
                                 android:fontFamily="@font/poppins_bold"
                                 android:textSize="18sp"
-                                android:textColor="@color/login_bg"/>
+                                android:textColor="@color/bina_desa_pink"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -251,7 +251,7 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/ic_search_green"
+                            android:src="@drawable/ic_search_pink"
                             app:tint="@color/pink"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
