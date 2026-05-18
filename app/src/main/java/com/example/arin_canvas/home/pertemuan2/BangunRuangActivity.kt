@@ -1,4 +1,4 @@
-package com.example.arin_canvas.pertemuan2
+package com.example.arin_canvas.home.pertemuan2
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.arin_canvas.BaseActivity
 import com.example.arin_canvas.R
-import com.example.arin_canvas.pertemuan4.DashboardActivity
 import kotlin.math.PI
 import kotlin.math.pow
 

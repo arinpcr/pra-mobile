@@ -1,12 +1,11 @@
-package com.example.arin_canvas.pertemuan4
+package com.example.arin_canvas.home.pertemuan4
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.arin_canvas.databinding.ActivityDashboardBinding
-import com.example.arin_canvas.pertemuan2.BangunRuangActivity
+import com.example.arin_canvas.home.pertemuan2.BangunRuangActivity
 import com.example.arin_canvas.AuthActivity // Pastikan path ini benar
 import com.example.arin_canvas.WebViewActivity // Import halaman WebView-mu
 import com.google.android.material.snackbar.Snackbar
@@ -61,7 +60,7 @@ class DashboardActivity : AppCompatActivity() {
         builder.setPositiveButton("Ya") { dialog, _ ->
 
             // ✨ Hapus session login di SharedPreferences
-            val sharedPref = getSharedPreferences("user_pref", Context.MODE_PRIVATE)
+            val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
             val editor = sharedPref.edit()
             editor.clear()
             editor.apply()

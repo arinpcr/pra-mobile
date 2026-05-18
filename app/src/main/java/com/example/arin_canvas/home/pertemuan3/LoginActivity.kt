@@ -1,12 +1,11 @@
-package com.example.arin_canvas.pertemuan3
+package com.example.arin_canvas.home.pertemuan3
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.arin_canvas.databinding.ActivityLoginBinding
-import com.example.arin_canvas.pertemuan4.DashboardActivity
+import com.example.arin_canvas.home.pertemuan4.DashboardActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -17,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // 1. Inisialisasi SharedPreferences
-        val sharedPreferences = getSharedPreferences("SIPADU_PREFS", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("SIPADU_PREFS", MODE_PRIVATE)
 
         binding.btnLogin.setOnClickListener {
             val email = binding.etUsername.text.toString()

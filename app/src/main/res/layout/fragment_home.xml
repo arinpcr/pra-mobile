@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/login_bg">
 
-    <!-- INI YANG SUDAH DIPERBAIKI (Tidak pakai MaterialToolbar lagi) -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -20,7 +19,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar">
 
-        <!-- Dekorasi Paw -->
         <ImageView
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -30,7 +28,7 @@
             android:layout_marginBottom="140dp"
             android:layout_marginEnd="20dp"
             android:rotation="-35"
-            android:alpha="0.5"/>
+            android:alpha="0.5" />
 
         <ImageView
             android:layout_width="45dp"
@@ -41,7 +39,7 @@
             android:layout_marginBottom="60dp"
             android:layout_marginStart="40dp"
             android:rotation="45"
-            android:alpha="0.7"/>
+            android:alpha="0.7" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -57,7 +55,6 @@
                 android:paddingHorizontal="25dp"
                 android:paddingBottom="40dp">
 
-                <!-- Header -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -71,11 +68,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_star_yellow"
-                            android:layout_marginBottom="5dp"/>
+                            android:layout_marginBottom="5dp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -83,6 +82,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:textSize="32sp"
                             android:textColor="@color/white" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -96,6 +96,7 @@
                         android:layout_height="60dp"
                         app:cardCornerRadius="30dp"
                         app:cardElevation="0dp">
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -104,7 +105,6 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
-                <!-- Tombol Bangun Ruang -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_bangun_ruang"
                     android:layout_width="match_parent"
@@ -113,39 +113,43 @@
                     app:cardCornerRadius="25dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardElevation="2dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="20dp"
                         android:gravity="center_vertical">
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/outline_calculate_24"/>
+                            android:src="@drawable/outline_calculate_24" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Bangun Ruang"
                                 android:fontFamily="@font/poppins_bold"
                                 android:textSize="18sp"
-                                android:textColor="@color/bina_desa_pink"/>
+                                android:textColor="@color/bina_desa_pink" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Perhitungan Luas &amp; Volume"
                                 android:textSize="12sp"
-                                android:textColor="#6D6D6D"/>
+                                android:textColor="#6D6D6D" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Tombol Adopt Pet -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_adopt_pet"
                     android:layout_width="match_parent"
@@ -154,39 +158,43 @@
                     app:cardCornerRadius="25dp"
                     app:cardBackgroundColor="@color/card_bg"
                     app:cardElevation="2dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="20dp"
                         android:gravity="center_vertical">
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/outline_family_star_24"/>
+                            android:src="@drawable/outline_family_star_24" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Adopt Pet"
                                 android:fontFamily="@font/poppins_bold"
                                 android:textSize="18sp"
-                                android:textColor="@color/login_bg"/>
+                                android:textColor="@color/login_bg" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Cari Sahabat Bulu"
                                 android:textSize="12sp"
-                                android:textColor="@color/login_bg"/>
+                                android:textColor="@color/login_bg" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Tombol Pet Chat -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_pet_chat"
                     android:layout_width="match_parent"
@@ -195,34 +203,39 @@
                     app:cardCornerRadius="25dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardElevation="2dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="20dp"
                         android:gravity="center_vertical">
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/outline_chat_24"/>
+                            android:src="@drawable/outline_chat_24" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Pet Chat"
                                 android:fontFamily="@font/poppins_bold"
                                 android:textSize="18sp"
-                                android:textColor="@color/login_bg"/>
+                                android:textColor="@color/login_bg" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Ngobrol Seru"
                                 android:textSize="12sp"
-                                android:textColor="#6D6D6D"/>
+                                android:textColor="#6D6D6D" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -231,9 +244,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#40FFFFFF"
-                    android:layout_marginVertical="10dp"/>
+                    android:layout_marginVertical="10dp" />
 
-                <!-- Tombol Web Bina Desa -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_web_view"
                     android:layout_width="match_parent"
@@ -242,40 +254,44 @@
                     app:cardCornerRadius="25dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardElevation="2dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="20dp"
                         android:gravity="center_vertical">
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/ic_search_pink"
-                            app:tint="@color/pink"/>
+                            app:tint="@color/pink" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Web Bina Desa"
                                 android:fontFamily="@font/poppins_bold"
                                 android:textSize="18sp"
-                                android:textColor="@color/pink"/>
+                                android:textColor="@color/pink" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Lihat Data Kependudukan"
                                 android:textSize="12sp"
-                                android:textColor="#F24174"/>
+                                android:textColor="#F24174" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Tombol Dashboard SIPADU -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_sipadu"
                     android:layout_width="match_parent"
@@ -284,40 +300,89 @@
                     app:cardCornerRadius="25dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardElevation="2dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="20dp"
                         android:gravity="center_vertical">
+
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/outline_family_star_24"
-                            app:tint="@color/login_bg"/>
+                            app:tint="@color/login_bg" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Dashboard SIPADU"
                                 android:fontFamily="@font/poppins_bold"
                                 android:textSize="18sp"
-                                android:textColor="@color/login_bg"/>
+                                android:textColor="@color/login_bg" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Modul Pengelolaan Desa"
                                 android:textSize="12sp"
-                                android:textColor="#6D6D6D"/>
+                                android:textColor="#6D6D6D" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Logout -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pertemuan_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/ic_star_yellow" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pertemuan 10"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/login_bg" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tab Layout &amp; RecyclerView"
+                                android:textSize="12sp"
+                                android:textColor="#6D6D6D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
                 <LinearLayout
                     android:id="@+id/btn_logout"
                     android:layout_width="match_parent"
@@ -326,13 +391,14 @@
                     android:background="@drawable/bg_search_bar"
                     android:backgroundTint="#FFEBEE"
                     android:gravity="center">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Logout"
                         android:fontFamily="@font/poppins_bold"
                         android:textSize="16sp"
-                        android:textColor="#D32F2F"/>
+                        android:textColor="#D32F2F" />
                 </LinearLayout>
 
             </LinearLayout>

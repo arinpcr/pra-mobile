@@ -1,4 +1,4 @@
-package com.example.arin_canvas.pertemuan4
+package com.example.arin_canvas.home.pertemuan4
 
 import android.os.Bundle
 import android.widget.Toast

@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Arincanvas">
         <activity
+            android:name=".pertemuan10.TenthActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
@@ -40,25 +43,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".pertemuan3.LoginActivity"
+            android:name=".home.pertemuan3.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan3.SuccessActivity"
+            android:name=".home.pertemuan3.SuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan4.DashboardActivity"
+            android:name=".home.pertemuan4.DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan4.ChatActivity"
+            android:name=".home.pertemuan4.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan4.AdoptActivity"
+            android:name=".home.pertemuan4.AdoptActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan2.BangunRuangActivity"
+            android:name=".home.pertemuan2.BangunRuangActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan4.MapsActivity"
+            android:name=".home.pertemuan4.MapsActivity"
             android:exported="false" />
 
         <meta-data

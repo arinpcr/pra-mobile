@@ -1,4 +1,4 @@
-package com.example.arin_canvas.pertemuan3
+package com.example.arin_canvas.home.pertemuan3
 
 import android.content.Intent
 import android.os.Bundle

@@ -13,9 +13,10 @@ import com.example.arin_canvas.AuthActivity
 import com.example.arin_canvas.ModifiedActivity
 import com.example.arin_canvas.WebViewActivity // <-- Sudah dikembalikan ke WebViewActivity
 import com.example.arin_canvas.databinding.FragmentHomeBinding
-import com.example.arin_canvas.pertemuan2.BangunRuangActivity
-import com.example.arin_canvas.pertemuan4.AdoptActivity
-import com.example.arin_canvas.pertemuan4.ChatActivity
+import com.example.arin_canvas.home.pertemuan2.BangunRuangActivity
+import com.example.arin_canvas.home.pertemuan4.AdoptActivity
+import com.example.arin_canvas.home.pertemuan4.ChatActivity
+import com.example.arin_canvas.pertemuan10.TenthActivity
 import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment() {
@@ -61,6 +62,13 @@ class HomeFragment : Fragment() {
         // 5. Tombol Dashboard SIPADU (Penyelamat Tugas Pertemuan 9)
         binding.cardSipadu.setOnClickListener {
             val intent = Intent(requireContext(), ModifiedActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Tombol Pertemuan 10
+        binding.cardPertemuan10.setOnClickListener {
+            // Cukup panggil nama Activity-nya saja
+            val intent = Intent(requireContext(), TenthActivity::class.java)
             startActivity(intent)
         }
 
